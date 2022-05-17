@@ -1,0 +1,9 @@
+function Login(){
+
+        document.getElementById("Login").style.display='inline'
+
+     }
+	 
+	 function Login_Close(){
+		 document.getElementById("Login_Close").style.display='none'
+	 }
