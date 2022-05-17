@@ -1,7 +1,3 @@
-<?php
-session_start();
-
-?>
 <!DOCTYPE html>
 <html>
 <head>
@@ -34,17 +30,11 @@ session_start();
         </div>
         <div class="inp_text">
           <label for="loginPw" class="screen_out">비밀번호</label>
-          <input type="password" id="loginPw" name="password" placeholder="Password" required>
+          <input type="password" id="loginPw" name="password" placeholder="Password" maxlength="20" required>
         </div>
       </div>
       <button type="submit" class="btn_login">로그인</button>
       <div class="login_append">
-        <div class="inp_chk"> <!-- 체크시 checked 추가 -->
-          <input type="checkbox" id="keepLogin" class="inp_radio"  name="keepLogin">
-          <label for="keepLogin" class="lab_g">
-<span class="img_top ico_check"></span>
-<span class="txt_lab">로그인 상태 유지</span>
-  </label>
     <button type="button" class="sbt" onclick="javascript:Sign_up_Open();">회원가입</button>
         </div>
       </div>
@@ -54,13 +44,13 @@ session_start();
 </div>
 
 <div id="sup">
-  <form method="post" id="sform" action="">
+  <form method="post" id="sform" action="./signup.php">
     <button type="button" class="SC" onclick="javascript:Sign_up_Close();">X</button>
     <fieldset>
       <div class="box_sup">
         <div class="inp_text">
-          <label for="UName" class="screen_out">비밀번호</label>
-          <input type="text" id="UName" name="UName" placeholder="성명" required>
+          <label for="UName" class="screen_out">이름</label>
+          <input type="text" id="UName" name="UName" placeholder="성명" maxlength="20" required>
         </div>
         <div class="inp_text">
           <label for="supID" class="screen_out">아이디</label>
@@ -68,7 +58,7 @@ session_start();
         </div>
         <div class="inp_text">
           <label for="supPW" class="screen_out">비밀번호</label>
-          <input type="password" id="supPW" name="supPW" placeholder="Password" required>
+          <input type="password" id="supPW" name="supPW" placeholder="Password" maxlength="20" required>
         </div>
       </div>
       <button type="submit" class="btn_sup">회원가입</button>

@@ -125,34 +125,6 @@ fieldset, img {
 .login_append .inp_chk {
     float: left;
 }
-.inp_chk .inp_radio {
-    position: absolute;
-    z-index: -1;
-    top: 0;
-    left: 0;
-    width: 18px;
-    height: 18px;
-    border: 0;
-}
-.inp_chk .lab_g {
-    display: inline-block;
-    margin-right: 19px;
-    color: #909090;
-    font-size: 13px;
-    line-height: 19px;
-    vertical-align: top;
-}
-.inp_chk .ico_check {
-    display: inline-block;
-    width: 18px;
-    height: 18px;
-    margin: 1px 4px 0 0;
-    background-position: -60px 0;
-    color: #333;
-}
-.inp_chk .txt_lab {
-    vertical-align: top;
-}
 
 .sbt
 {
