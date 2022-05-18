@@ -3,8 +3,6 @@
     $con=mysqli_connect('127.0.0.1','root','','web');
     $id=$_POST['loginId'];
     $pwd=hash('sha256',$_POST['loginPw']);
-    $sid=mysqli_query($con,"SELECT id FROM members WHERE id='$id'");
-    
     $q="SELECT * FROM members WHERE id='$id' AND passwod='$pwd'";
 
     $result=mysqli_query($con,$q);
