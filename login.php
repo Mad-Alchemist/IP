@@ -1,10 +1,10 @@
 <?php
     session_start();
     $con=mysqli_connect('127.0.0.1','root','','web');
-    $sid=mysqli_query($con,"SELECT id FROM members WHERE id='$id'");
     $id=$_POST['loginId'];
     $pwd=hash('sha256',$_POST['loginPw']);
-
+    $sid=mysqli_query($con,"SELECT id FROM members WHERE id='$id'");
+    
     $q="SELECT * FROM members WHERE '$id' AND passwod='$pwd'";
 
     $result=mysqli_query($con,$q);
