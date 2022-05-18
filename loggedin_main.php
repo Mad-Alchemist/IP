@@ -8,6 +8,7 @@
 <link rel="stylesheet" href="./css/login.css" type="text/css">
 <body style="background-color:black;">
 <nav id="TopBar">
+  <b1><?php echo $_SESSION['name']?>님 반갑습니다.</b1>
 <ul>
   <li><a class="Link" href="Lobby.html">Main</a></li>
   <li><a class="Link" href="Lunch.html">Lunch</a></li>
