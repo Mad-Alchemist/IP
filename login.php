@@ -13,12 +13,12 @@
         $_SESSION['id']=$row['id'];
         $_SESSION['name']=$row['name'];
         echo "<script>location.replace('loggedin_main.php');</script>";
-        exit;
+        mysqli_close();
     }
     else
     {
         echo "<script>alert('아이디 혹은 비밀번호를 확인해 주십오')</script>";
         echo "<script>location.replace('main.php');</script>";
-        exit;
+        mysqli_close();
     }
 ?>
