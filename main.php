@@ -30,7 +30,7 @@
         </div>
         <div class="inp_text">
           <label for="loginPw" class="screen_out">비밀번호</label>
-          <input type="password" id="loginPw" name="password" placeholder="Password" maxlength="20" required>
+          <input type="password" id="loginPw" name="loginPw" placeholder="Password" maxlength="20" required>
         </div>
       </div>
       <button type="submit" class="btn_login">로그인</button>
