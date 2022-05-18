@@ -5,10 +5,10 @@
     $pwd=hash('sha256',$_POST['loginPw']);
     $sid=mysqli_query($con,"SELECT id FROM members WHERE id='$id'");
     
-    $q="SELECT * FROM members WHERE '$id' AND passwod='$pwd'";
+    $q="SELECT * FROM members WHERE id='$id' AND passwod='$pwd'";
 
     $result=mysqli_query($con,$q);
-    $row=$result=mysqli_fetch_array(MYSQLI_ASSOC);
+    $row=$result->fetch_array(MYSQLI_ASSOC);
 
     if($row!=null)
     {
