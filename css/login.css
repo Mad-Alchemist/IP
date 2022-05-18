@@ -164,6 +164,8 @@ fieldset, img {
 
 .Uname
 {
+    position:fixed;
+    right:50px;
+    margin:30px;
     color:#ddd;
-    float:right;
 }

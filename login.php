@@ -10,8 +10,8 @@
 
     if($row!=null)
     {
-        $_SESSION['id']=$row['id'];
-        $_SESSION['name']=$row['name'];
+        $_SESSION["id"]=$row['id'];
+        $_SESSION["name"]=$row['name'];
         echo "<script>location.replace('loggedin_main.php');</script>";
         mysqli_close($con);
     }
