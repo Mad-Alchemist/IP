@@ -8,7 +8,7 @@
     $q="SELECT * FROM members WHERE '$id' AND passwod='$pwd'";
 
     $result=mysqli_query($con,$q);
-    $row=$result->fetch_array(MYSQLI_ASSOC);
+    $row=$result=mysqli_fetch_array(MYSQLI_ASSOC);
 
     if($row!=null)
     {
