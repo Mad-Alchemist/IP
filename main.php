@@ -19,7 +19,7 @@
 </nav>
 
 <div id="Login">
- <form method="post" id="authForm" action="loing.php">
+ <form method="post" id="authForm" action="login.php">
     <input type="hidden" name="redirectUrl" value="">
 	<button type="button" class="LC" onclick="javascript:Login_Close();">X</button>
     <fieldset>
