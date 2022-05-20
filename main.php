@@ -9,7 +9,7 @@
 <body style="background-color:black;">
 <nav id="TopBar">
 <ul>
-  <li><a class="Link" href="Lobby.html">Main</a></li>
+  <li><a class="Link" href="main.php">Main</a></li>
   <li><a class="Link" href="Lunch.html">Lunch</a></li>
   <li><a class="Link" href="car.html">Go to Univ</a></li>
   <li><a class="Link" href="Market.html">Market</a></li>

@@ -7,10 +7,10 @@
 <link rel="stylesheet" href="./css/a.css" type="text/css">
 <link rel="stylesheet" href="./css/login.css" type="text/css">
 <body style="background-color:black;">
-<a class="Uname"><?php echo $_SESSION['name']?>님 반갑습니다.</a>
-<nav id="TopBar"> 
+<nav id="TopBar">
+  <a class="Uname"><?php echo $_SESSION['name'] ?>님 반갑습니다.</a>
 <ul>
-  <li><a class="Link" href="Lobby.html">Main</a></li>
+  <li><a class="Link" href="loggedin_main.php">Main</a></li>
   <li><a class="Link" href="Lunch.html">Lunch</a></li>
   <li><a class="Link" href="car.html">Go to Univ</a></li>
   <li><a class="Link" href="Market.html">Market</a></li>
