@@ -14,7 +14,7 @@
   <li><a class="Link" href="Lunch.html">Lunch</a></li>
   <li><a class="Link" href="car.html">Go to Univ</a></li>
   <li><a class="Link" href="Market.html">Market</a></li>
-  <li><a class="Link" href="Community.html">Community</a></li>
+  <li><a class="Link" href="board.php">Community</a></li>
   <li><a class="Link" id="btl" href="logout.php">Logout</a></li>
 </ul>
 </nav>
