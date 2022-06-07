@@ -2,6 +2,7 @@
 #TopBar
 {
   position: fixed;
+  z-index:10;
   top: 60px;
   width: 100%;
 }
@@ -34,3 +35,38 @@
   background-color: #4d4d4d;
 }
 
+.userName
+{
+  margin-top:-13vh;
+  z-index:10;
+  color:#FFFFFF;
+  position:fixed;
+  right:5vw;
+}
+
+.mainbox
+{
+  margin-top:200px;
+  text-align:center;
+  background-color:black;
+  width:100vw;
+  height:100vh;
+  border:none;
+
+}
+
+#T
+{
+  font-size:20px;
+  margin-top:40vh;
+  color:white;
+}
+.anim
+{
+  text-align:center;
+}
+
+.img
+{
+  margin-top:100px;
+}

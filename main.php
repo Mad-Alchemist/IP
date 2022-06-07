@@ -6,24 +6,30 @@
 </head>
 <link rel="stylesheet" href="./css/a.css" type="text/css">
 <link rel="stylesheet" href="./css/login.css" type="text/css">
+<link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css"> 
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script> 
 <body style="background-color:black;">
+<?php if (isset($_SESSION['name'])) { ?>
+<p class="userName"><?php echo ($_SESSION['name']); ?>님 반갑습니다.</p>
+<?php }?>
+
 <nav id="TopBar">
-<ul>
-  <li><a class="Link" href="main.php">Main</a></li>
-  <li><a class="Link" href="Lunch.html">Lunch</a></li>
-  <li><a class="Link" href="car.html">Go to Univ</a></li>
-  <li><a class="Link" href="Market.html">Market</a></li>
-  <li><a class="Link" href="board.php">Community</a></li>
-  <li>
-  <?php if (isset($_SESSION['id'])!=NULL){ ?>
-    <a class="Link" id="btl" href="logout.php">Logout</a>
+  <ul>
+    <li><a class="Link" href="main.php">메인 페이지</a></li>
+    <li><a class="Link" href="Lunch.html">정보</a></li>
+    <li><a class="Link" href="car.html">카풀/택시</a></li>
+    <li><a class="Link" href="Market.html">마켓</a></li>
+    <li><a class="Link" href="board.php">커뮤니티</a></li>
+    <li>
+  <?php if (isset($_SESSION['id'])){ ?>
+    <a class="Link" id="btl" href="logout.php">로그아웃</a>
   <?php }
-  else {?>
-    <a class="Link" id="btl" href="javascript:Login_Open();">Login</a>
-  <?php }?>
-  </li>
-</ul>
-</nav>
+    else {?>
+      <a class="Link" id="btl" href="javascript:Login_Open();">로그인</a>
+    <?php }?>
+    </li>
+    </ul>
+  </nav>
 
 <div id="Login">
  <form method="post" id="authForm" action="login.php">
@@ -73,5 +79,33 @@
   </form>
 </div>
 
+<div class="mainbox">
+  <img src="./img/ex1.png">
+  <p id="T">아래로 스크롤 하여 확인하기 </p>
+  </div>
+
+<div class="anim">
+  <div class="img" data-aos="fade-up-right" data-aos-duration="1600" data-aos-offset="800">
+    <img src="./img/ex1.png">
+    </div>
+  <div class="img" data-aos="fade-up-left" data-aos-duration="1600" data-aos-offset="800">
+    <img src="./img/ex2.png">
+    </div>
+  <div class="img" data-aos="fade-up-left" data-aos-duration="1600" data-aos-offset="800">
+    <img src="./img/ex2.png">
+    </div>
+  <div class="img" data-aos="fade-up-left" data-aos-duration="1600" data-aos-offset="800">
+    <img src="./img/ex2.png">
+    </div>
+  <div class="img" data-aos="fade-up-left" data-aos-duration="1600" data-aos-offset="800">
+    <img src="./img/ex2.png">
+    </div>
+  <div class="img" data-aos="fade-up-left" data-aos-duration="1600" data-aos-offset="800">
+    <img src="./img/ex2.png">
+  </div>
+
+<script> 
+  AOS.init(); 
+  </script>
 </body>
 </html>
