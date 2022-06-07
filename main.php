@@ -13,8 +13,15 @@
   <li><a class="Link" href="Lunch.html">Lunch</a></li>
   <li><a class="Link" href="car.html">Go to Univ</a></li>
   <li><a class="Link" href="Market.html">Market</a></li>
-  <li><a class="Link" href="Community.html">Community</a></li>
-  <li><a class="Link" id="btl" href="javascript:Login_Open();">Login</a></li>
+  <li><a class="Link" href="board.php">Community</a></li>
+  <li>
+  <?php if (isset($_SESSION['id'])!=NULL){ ?>
+    <a class="Link" id="btl" href="logout.php">Logout</a>
+  <?php }
+  else {?>
+    <a class="Link" id="btl" href="javascript:Login_Open();">Login</a>
+  <?php }?>
+  </li>
 </ul>
 </nav>
 

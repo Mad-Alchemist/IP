@@ -98,7 +98,7 @@
     <?php
     $connect = mysqli_connect('127.0.0.1', 'root', '', 'web');
     $number = $_GET['number'];  // GET 방식 사용
-    $query = "select title, content, date, hit, name from board where number = $number";
+    $query = "select title, content, date, hit, name, id from board where number = $number";
     $result = $connect->query($query);
     $rows = mysqli_fetch_assoc($result);
     ?>
@@ -125,9 +125,17 @@
     <div class="read_btn">
         <button class="read_btn1" onclick="location.href='./board.php'">목록</button>&nbsp;&nbsp;
         <?php
-        if (isset($_SESSION['id']) and $_SESSION['id'] == $connect->query("select id from board where number=$number")) { ?>
-        <button class="read_btn1" onclick="location.href='./modify.php?number=<?= $number ?>&id=<?= $_SESSION['id'] ?>'">수정</button>&nbsp;&nbsp;
-        <button class="read_btn1" onclick="location.href='./delete.php?number=<?= $number ?>&id=<?= $_SESSION['id'] ?>'">삭제</button>
+        if (isset($_SESSION['id']) && $_SESSION['id'] == $rows['id']) { ?>
+            <button class="read_btn1" onclick="location.href='./modify.php?number=<?= $number ?>'">수정</button>&nbsp;&nbsp;
+            <button class="read_btn1" a onclick="ask();">삭제</button>
+
+            <script>
+            function ask() {
+                if (confirm("게시글을 삭제하시겠습니까?")) {
+                    window.location = "./delete.php?number=<?= $number ?>"
+                }
+            }
+            </script>
         <?php } ?>
     </div>
 </body>

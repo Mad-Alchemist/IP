@@ -52,6 +52,7 @@
     //$result = $connect->query($query);
     $total = mysqli_num_rows($result);  //result set의 총 레코드(행) 수 반환
     ?>
+     <a class="home" href="main.php">메인 페이지</a>
     <p style="font-size:25px; text-align:center"><b>게시판</b></p>
     <table align=center>
         <thead align="center">
@@ -93,7 +94,9 @@
     </table>
 
     <div class=text>
+        <?php if (isset($_SESSION['id'])){?>
         <font style="cursor: hand" onClick="location.href='./write.php'">글쓰기</font>
+        <?php }?>
     </div>
 </body>
 
