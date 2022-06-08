@@ -80,7 +80,7 @@
 </div>
 
 <div class="mainbox">
-  <img src="./img/ex1.png">
+  <img class="img" src="./img/ex1.png">
   <p id="T">아래로 스크롤 하여 확인하기 </p>
   </div>
 
