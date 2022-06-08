@@ -64,11 +64,14 @@
 {
   text-align:center;
 }
+.aos
+{
+  margin-top:100px;
+  margin-bottom:100px;
+}
 
 .img
 {
   width:80vw;
   height:auto;
-  margin-top:100px;
-  margin-bottom:100px;
 }

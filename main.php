@@ -85,23 +85,23 @@
   </div>
 
 <div class="anim">
-  <div class="img" data-aos="fade-up-right" data-aos-duration="1600" data-aos-offset="800">
-    <img src="./img/ex1.png">
+  <div class="aos" data-aos="fade-up-right" data-aos-duration="1600" data-aos-offset="800">
+    <img class="img" src="./img/ex1.png">
     </div>
-  <div class="img" data-aos="fade-up-left" data-aos-duration="1600" data-aos-offset="800">
-    <img src="./img/ex2.png">
+  <div class="aos" data-aos="fade-up-left" data-aos-duration="1600" data-aos-offset="800">
+    <img class="img" src="./img/ex2.png">
     </div>
-  <div class="img" data-aos="fade-up-left" data-aos-duration="1600" data-aos-offset="800">
-    <img src="./img/ex2.png">
+  <div class="aos" data-aos="fade-up-left" data-aos-duration="1600" data-aos-offset="800">
+    <img class="img" src="./img/ex2.png">
     </div>
-  <div class="img" data-aos="fade-up-left" data-aos-duration="1600" data-aos-offset="800">
-    <img src="./img/ex2.png">
+  <div class="aos" data-aos="fade-up-left" data-aos-duration="1600" data-aos-offset="800">
+    <img class="img" src="./img/ex2.png">
     </div>
-  <div class="img" data-aos="fade-up-left" data-aos-duration="1600" data-aos-offset="800">
-    <img src="./img/ex2.png">
+  <div class="aos" data-aos="fade-up-left" data-aos-duration="1600" data-aos-offset="800">
+    <img class="img" src="./img/ex2.png">
     </div>
-  <div class="img" data-aos="fade-up-left" data-aos-duration="1600" data-aos-offset="800">
-    <img src="./img/ex2.png">
+  <div class="aos" data-aos="fade-up-left" data-aos-duration="1600" data-aos-offset="800">
+    <img class="img" src="./img/ex2.png">
   </div>
 
 <script> 
