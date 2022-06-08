@@ -1,9 +1,13 @@
+body{
+  width:100vw;
+  height:auto;
+}
 #TopBar
 {
   position: fixed;
   z-index:10;
   top: 60px;
-  width: 90vw;
+  width: 100vw;
   height:auto;
   text-align: center;
 }
@@ -15,7 +19,7 @@
   background-color: #2d2d2d;
   float: left;
   line-height: 30px;
-  width: 15%;
+  width: 16%;
   vertical-align: middle;
   text-align: center;
 }
