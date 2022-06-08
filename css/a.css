@@ -46,7 +46,7 @@ body{
 
 .userName
 {
-  margin-top:-50px;
+  top:5vh;
   z-index:10;
   color:#FFFFFF;
   position:fixed;
