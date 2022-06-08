@@ -43,13 +43,11 @@ input {
 {
 	cursor: pointer;
 	position: sticky;
-    right:5px;
-    top:5px;
 	border: 0px solid;
 	border-radius: 5px;
 	background-color: transparent;
 	color: #ddd;
-	margin: 5px;
+	margin: 10px;
 }
 
 .inner_login {
