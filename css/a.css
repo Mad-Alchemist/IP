@@ -12,10 +12,12 @@ body{
   height:auto;
   text-align: center;
 }
-
-#TopBar ul li
+#TopBar ul
 {
   margin:0;
+}
+#TopBar ul li
+{
   list-style: none;
   color: white;
   background-color: #2d2d2d;
