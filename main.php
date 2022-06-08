@@ -8,7 +8,7 @@
 <link rel="stylesheet" href="./css/login.css" type="text/css">
 <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css"> 
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script> 
-<body style="background-color:black; margin:0px;">
+<body style="background-color:black; width:100vw">
 <?php if (isset($_SESSION['name'])) { ?>
 <p class="userName"><?php echo ($_SESSION['name']); ?>님 반갑습니다.</p>
 <?php }?>
