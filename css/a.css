@@ -3,7 +3,7 @@
   position: fixed;
   z-index:10;
   top: 60px;
-  width: 100vw;
+  width: 90vw;
   height:auto;
   text-align: center;
 }
@@ -15,7 +15,7 @@
   background-color: #2d2d2d;
   float: left;
   line-height: 30px;
-  width: 16%;
+  width: 14%;
   vertical-align: middle;
   text-align: center;
 }
