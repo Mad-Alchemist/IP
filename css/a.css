@@ -3,7 +3,7 @@
   position: fixed;
   z-index:10;
   top: 60px;
-  width: 80vw;
+  width: 100vw;
 }
 
 #TopBar ul li
@@ -23,7 +23,6 @@
   text-decoration: none;
   color: white;
   display: block;
-  width: 100%;
   font-size: 12px;
   font-weight: bold;
 }
