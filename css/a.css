@@ -4,7 +4,7 @@
   position: fixed;
   z-index:10;
   top: 60px;
-  width: 100%;
+  width: 100vw;
 }
 
 #TopBar ul li
@@ -69,4 +69,5 @@
 .img
 {
   margin-top:100px;
+  margin-bottom:100px;
 }
