@@ -1,4 +1,8 @@
-
+*
+{
+  width:100vw;
+  height:auto;
+}
 #TopBar
 {
   position: fixed;
