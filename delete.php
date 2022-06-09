@@ -8,7 +8,7 @@ $rows = mysqli_fetch_assoc($result);
 
 $userid = $rows['id'];
 
-$URL = "./board.php";
+$URL = $_SERVER["HTTP_REFERER"];
 ?>
 
 <?php
