@@ -98,7 +98,7 @@
     <?php
     $connect = mysqli_connect('127.0.0.1', 'root', '', 'web');
     $number = $_GET['number'];  // GET 방식 사용
-    $query = "select title, content, date, hit, name, id from board where number = $number";
+    $query = "select title, content, date, hit, name, id from board where number = $number and b_num=4";
     $result = $connect->query($query);
     $rows = mysqli_fetch_assoc($result);
     ?>

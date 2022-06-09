@@ -52,7 +52,7 @@
                             <td><textarea name="content" cols=75 rows=15></textarea></td>
                         </tr>
                     </table>
-
+                    <input type=hidden value=<?php $b_num=4;?> name="b_num">
                     <center>
                         <input style="height:26px; width:47px; font-size:16px;" type="submit" value="작성">
                     </center>

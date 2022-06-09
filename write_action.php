@@ -6,12 +6,13 @@ $name=$_SESSION['name'];                //Writer
 $title = $_POST['title'];               //Title
 $content = $_POST['content'];           //Content
 $date = date('Y-m-d H:i:s');            //Date
+$b_num=$_POST['b_num'];
 
 $URL = './board.php';                   //return URL
 
 
-$query = "INSERT INTO board (number, title, content, name, id, date, hit) 
-        values(null,'$title', '$content', '$name', '$id', '$date', 0)";
+$query = "INSERT INTO board (b_num,number, title, content, name, id, date, hit) 
+        values($b_num,null,'$title', '$content', '$name', '$id', '$date', 0)";
 
 
 $result = $connect->query($query);
