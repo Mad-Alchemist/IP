@@ -16,7 +16,7 @@
 <nav id="TopBar">
   <ul>
     <li><a class="Link" href="main.php">메인 페이지</a></li>
-    <li><a class="Link" href="Lunch.html">정보</a></li>
+    <li><a class="Link" href="inforboard.php">정보</a></li>
     <li><a class="Link" href="car.html">카풀/택시</a></li>
     <li><a class="Link" href="Market.html">마켓</a></li>
     <li><a class="Link" href="board.php">커뮤니티</a></li>

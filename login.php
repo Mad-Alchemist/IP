@@ -12,6 +12,7 @@
     {
         $_SESSION['id']=$row['id'];
         $_SESSION['name']=$row['name'];
+        $_SESSION['permission']=$row['permission'];
         echo "<script>location.replace('main.php');</script>";
         mysqli_close($con);
     }

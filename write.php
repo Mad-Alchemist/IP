@@ -3,34 +3,11 @@
 
 <head>
     <meta charset='utf-8'>
-    <style>
-        table.table2 {
-            border-collapse: separate;
-            border-spacing: 1px;
-            text-align: left;
-            line-height: 1.5;
-            border-top: 1px solid #ccc;
-            margin: 20px 10px;
-        }
-
-        table.table2 tr {
-            width: 50px;
-            padding: 10px;
-            font-weight: bold;
-            vertical-align: top;
-            border-bottom: 1px solid #ccc;
-        }
-
-        table.table2 td {
-            width: 100px;
-            padding: 10px;
-            vertical-align: top;
-            border-bottom: 1px solid #ccc;
-        }
-    </style>
+    <link rel="stylesheet" href="./css/write.css" type="text/css">
 </head>
 
 <body>
+    <?php $turl=$_SERVER['HTTP_REFERER']?>
     <form method="post" action="write_action.php">
         <!-- method : POST!!! (GET X) -->
         <table style="padding-top:50px" align=center width=auto border=0 cellpadding=2>
@@ -51,8 +28,10 @@
                             <td>내용</td>
                             <td><textarea name="content" cols=75 rows=15></textarea></td>
                         </tr>
+                
                     </table>
-                    <input type=hidden value=4 name="b_num">
+                    <input type="hidden" value=<?php echo $_POST['b_num']?> name="b_num">
+                    <input type="hidden" value=<?php echo $turl?> name="turl">
                     <center>
                         <input style="height:26px; width:47px; font-size:16px;" type="submit" value="작성">
                     </center>

@@ -95,7 +95,10 @@
 
     <div class=text>
         <?php if (isset($_SESSION['id'])){?>
-        <font style="cursor: hand" onClick="location.href='./write.php'">글쓰기</font>
+            <form method="post" action="./write.php">
+                <input type="hidden" value=4 name="b_num">
+                <button type="submit">글쓰기</button>
+            </form>
         <?php }?>
     </div>
 </body>
