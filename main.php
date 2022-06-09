@@ -78,31 +78,28 @@
     </fieldset>
   </form>
 </div>
-
-<div class="mainbox">
-  <img class="img" src="./img/ex1.png">
-  <p id="T">아래로 스크롤 하여 확인하기 </p>
-  </div>
-
 <div class="anim">
-  <div class="aos" data-aos="fade-up-right" data-aos-duration="1600" data-aos-offset="800">
+  <img class="MImg" src="./img/123.png" data-aos="fade" data-aos-duration="2000">
+  <p id="T">아래로 스크롤 하여 확인하기 </p>
+  <div class="aos" data-aos="fade-up-right" data-aos-duration="2000" data-aos-offset="800">
     <img class="img" src="./img/ex1.png">
     </div>
-  <div class="aos" data-aos="fade-up-left" data-aos-duration="1600" data-aos-offset="800">
+  <div class="aos" data-aos="fade-up-left" data-aos-duration="2000" data-aos-offset="800">
     <img class="img" src="./img/ex2.png">
     </div>
-  <div class="aos" data-aos="fade-up-left" data-aos-duration="1600" data-aos-offset="800">
+  <div class="aos" data-aos="fade-up-left" data-aos-duration="2000" data-aos-offset="800">
     <img class="img" src="./img/ex2.png">
     </div>
-  <div class="aos" data-aos="fade-up-left" data-aos-duration="1600" data-aos-offset="800">
+  <div class="aos" data-aos="fade-up-left" data-aos-duration="2000" data-aos-offset="800">
     <img class="img" src="./img/ex2.png">
     </div>
-  <div class="aos" data-aos="fade-up-left" data-aos-duration="1600" data-aos-offset="800">
+  <div class="aos" data-aos="fade-up-left" data-aos-duration="2000" data-aos-offset="800">
     <img class="img" src="./img/ex2.png">
     </div>
-  <div class="aos" data-aos="fade-up-left" data-aos-duration="1600" data-aos-offset="800">
+  <div class="aos" data-aos="fade-up-left" data-aos-duration="2000" data-aos-offset="800">
     <img class="img" src="./img/ex2.png">
   </div>
+</div>
 
 <script> 
   AOS.init(); 

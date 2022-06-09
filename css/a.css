@@ -53,30 +53,32 @@ body{
   right:5vw;
 }
 
-.mainbox
-{
-  margin-top:200px;
-  text-align:center;
-  background-color:black;
-  border:none;
-}
 
-#T
-{
-  font-size:20px;
-  margin-top:40vh;
-  color:white;
-}
 .anim
 {
   text-align: center;
 }
+
 .aos
 {
   margin-top:100px;
   margin-bottom:100px;
 }
 
+#T
+{
+  font-size:20px;
+  color:white;
+}
+
+.MImg
+{
+  margin-top:150px;
+  width:100vw;
+  max-width:1500px;
+  height:auto;
+
+}
 .img
 {
   width:80vw;
