@@ -47,7 +47,7 @@
 <body>
     <?php
     $connect = mysqli_connect('127.0.0.1', 'root', '', 'web') or die("connect failed");
-    $query = "select * from board order by number desc where b_num=4";    //역순 출력
+    $query = "select * from board where b_num=4 order by number desc";    //역순 출력
     $result = mysqli_query($connect, $query);
     //$result = $connect->query($query);
     $total = mysqli_num_rows($result);  //result set의 총 레코드(행) 수 반환
