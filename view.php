@@ -101,6 +101,8 @@
     $query = "select title, content, date, hit, name, id from board where number = $number";
     $result = $connect->query($query);
     $rows = mysqli_fetch_assoc($result);
+    $b_num=$_POST['b_num'];
+    $connect->query("update board set hit=hit+1 where number=$number");
     ?>
 
     <table class="read_table" align=center>
@@ -123,12 +125,16 @@
 
     <!-- MODIFY & DELETE 추후 세션처리로 보완 예정 -->
     <div class="read_btn">
-        <button class="read_btn1" onclick="location.href='./board.php'">목록</button>&nbsp;&nbsp;
+        <form method="post" action="./board.php" style="display:inline;">
+            <input type="hidden" name="b_num" value="<?php echo $b_num ?>">
+            <button type="submit" class="read_btn1">목록</button>&nbsp;&nbsp;
+        </form>
         <?php
         if (isset($_SESSION['id']) && $_SESSION['id'] == $rows['id']) { ?>
             <button class="read_btn1" onclick="location.href='./modify.php?number=<?= $number ?>'">수정</button>&nbsp;&nbsp;
             <button class="read_btn1" a onclick="ask();">삭제</button>
-
+        
+        
             <script>
             function ask() {
                 if (confirm("게시글을 삭제하시겠습니까?")) {

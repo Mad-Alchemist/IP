@@ -13,7 +13,7 @@ if ($result) {
 ?>
     <script>
         alert("수정되었습니다.");
-        location.replace("./view.php?number=<?= $number ?>");
+        location.replace("./main.php");
     </script>
 <?php } else {
     echo "다시 시도해주세요.";

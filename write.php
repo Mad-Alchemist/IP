@@ -7,7 +7,7 @@
 </head>
 
 <body>
-    <?php $turl=$_SERVER['HTTP_REFERER']?>
+    <?php $turl='./main.php'?>
     <form method="post" action="write_action.php">
         <!-- method : POST!!! (GET X) -->
         <table style="padding-top:50px" align=center width=auto border=0 cellpadding=2>

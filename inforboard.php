@@ -3,6 +3,7 @@
 
 <head>
     <meta charset='utf-8'>
+    <title>정보 게시판</title>
     <link rel="stylesheet" href="./css/infor.css" type="text/css">
 </head>
 
@@ -24,13 +25,17 @@
 			<tr>
                <td align="center">제목</td>
                 <td colspan="2">
-                    <form method="post">
-                        <input type="text" name="title" style="width:600px;" align="center" />
+                    <form method="post" action="./search_board.php">
+                        <input type="hidden" name="b_num" value=1>
+                        <input type="text" name="title" style="width:600px;" align="center" required />
                         <button class="sbtn" type="submit" name="search">검색</button>
                         </form>
                     </td>
                 <td>
-                    <a class="mo">더보기</a>
+                    <form method="post" action="board.php">
+                        <input type="hidden" name="b_num" value=1>
+                        <button type="submit" class="mo" href="./board.php">더보기</a>
+                        </form>
                 </td>
 				
                 
@@ -57,13 +62,16 @@
                     <tr>
                         <!--배경색 그냥-->
                     <?php } ?>
+                    <form method="post" action="view.php?number=<?php echo $rows['number'] ?>">
                     <td width="50" align="center"><?php echo $total ?></td>
                     <td width="500" align="center">
-                        <a href="view.php?number=<?php echo $rows['number'] ?>">
-                            <?php echo $rows['title'] ?>
+                        <input type="hidden" name="b_num" value="1">
+                        <button type="submit" class="tle">
+                            <?php echo $rows['title'] ?></button>
                     </td>
                     <td width="200" align="center"><?php echo $rows['date'] ?></td>
                     <td width="50" align="center"><?php echo $rows['hit'] ?></td>
+                    </form>
                     </tr>
                     
                 <?php

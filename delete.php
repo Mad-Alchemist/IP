@@ -15,7 +15,7 @@ $URL = $_SERVER["HTTP_REFERER"];
 if (!isset($_SESSION['id'])) {
 ?> <script>
         alert("권한이 없습니다.");
-        location.replace("<?php echo $URL ?>");
+        location.replace("main.php");
     </script>
 
 <?php } else if ($_SESSION['id'] == $userid) {
@@ -23,13 +23,13 @@ if (!isset($_SESSION['id'])) {
     $result1 = $connect->query($query1); ?>
     <script>
         alert("게시글이 삭제되었습니다.");
-        location.replace("<?php echo $URL ?>");
+        location.replace("main.php");
     </script>
 
 <?php } else { ?>
     <script>
         alert("권한이 없습니다.");
-        location.replace("<?php echo $URL ?>");
+        location.replace("main.php");
     </script>
 <?php }
 ?>

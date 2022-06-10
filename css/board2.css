@@ -1,0 +1,86 @@
+table {
+    border-top: 1px solid #444444;
+    border-collapse: collapse;
+}
+
+tr {
+    border-bottom: 1px solid #444444;
+    padding: 10px;
+}
+
+td {
+    padding: 10px;
+    border-bottom: 1px solid #efefef;
+    font-weight: bold;
+}
+
+table > thead> tr > td  {
+    background: #605e5e;
+}
+
+table .even {
+    background: #efefef;
+}
+
+.text {
+    text-align: center;
+    padding-top: 20px;
+    color: #000000
+}
+
+.text:hover {
+    text-decoration: underline;
+}
+
+a:link {
+    color: #57A0EE;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+table{
+    background: paleturquoise;
+}
+.gc{ color:rgb(177, 180, 161);
+}
+.ggff{
+    color:rgb(0, 0, 0);
+}
+body{
+    height:100vh;
+    background: url(https://mblogthumb-phinf.pstatic.net/MjAxNzA1MzFfMTAg/MDAxNDk2MTkyODgzODIz.jhmAXS2asxbS1M9-IeBvi65TFbo50D9UYlOHNlmRm-kg.WGunJDi22LU6Wy_zX73ZSQ_TcNrR35gNwJpybs-eTLQg.JPEG.heeyy2/%EB%8F%84%EC%84%9C%EA%B4%80%EC%82%AC%EC%A7%84_3.jpg?type=w800);
+    background-repeat: no-repeat;
+    background-size: cover;
+ 
+}
+
+.home
+{
+    background-color:transparent;
+    width:150px;
+    height:auto;
+    margin:20px;
+}
+
+.sbtn
+{
+    background-color:#605e5e;
+    color:black;
+    border:none;
+    border-radius:5px;
+    font-weight: bold;
+    width:100px;
+    height:auto;
+    cursor:pointer;
+}
+.tle
+{
+    background-color:transparent;
+    border:none;
+    padding: 10px;
+    font-weight: bold;
+    cursor:pointer;
+}
