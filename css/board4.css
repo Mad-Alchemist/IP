@@ -1,0 +1,72 @@
+.tile
+{
+    font-size:100px;
+    text-align:center;
+    color:silver
+}
+
+table {
+    border-top: 1px solid black;
+    border-collapse: collapse;
+}
+
+tr {
+    border-bottom: 1px solid black;
+    padding: 20px;
+}
+
+
+td {
+    border-bottom: 1px solid white;
+    padding: 20px;
+    background-color: #7CC7F0;
+
+}
+
+table .even {
+    background: white;
+}
+
+.gif{
+    position:absolute;
+    z-index:-1;
+    left:5vw;
+    bottom: 5vh;
+}
+.text{
+    text-align: center;
+    margin-top: 20px;
+}
+.sbtn
+{
+    height: 30px;
+    width: 100px;
+    font-size: 20px;
+    background-color: white;
+    border: 2px solid black;
+}
+
+a:link {
+    color: blue;
+    text-decoration: none;
+}
+a:hover {
+    text-decoration: underline;
+}
+
+.home
+{
+    background-color:transparent;
+    width:150px;
+    height:auto;
+    margin:20px;
+}
+
+.tle
+{
+    background-color:transparent;
+    border:none;
+    padding: 10px;
+    font-weight: bold;
+    cursor:pointer;
+}

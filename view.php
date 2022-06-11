@@ -3,17 +3,27 @@
 
 <head>
     <meta charset='utf-8'>
-    <link rel="stylesheet" href="./css/view.css" type="text/css">
+    <?php
+    $b_num=$_POST['b_num'];
+     if ($b_num==1){?>
+        <link rel="stylesheet" href="./css/view.css" type="text/css">
+    <?php } else if($b_num==2){?>
+        <link rel="stylesheet" href="./css/view.css" type="text/css">
+    <?php } else if($b_num==3){?>
+        <link rel="stylesheet" href="./css/view.css" type="text/css">
+    <?php } else if($b_num==4){?>
+        <link rel="stylesheet" href="./css/view4.css" type="text/css">
+        <?php }?>
 </head>
 
 <body>
     <?php
     $connect = mysqli_connect('127.0.0.1', 'root', '', 'web');
     $number = $_GET['number'];  // GET 방식 사용
-    $query = "select title, content, date, hit, name, id from board where number = $number and b_num=4";
+    $query = "select title, content, date, hit, name, id from board where number = $number";
     $result = $connect->query($query);
     $rows = mysqli_fetch_assoc($result);
-    $uphit="update board set hit +=1;"
+    $connect->query("update board set hit=hit+1 where number=$number");
     ?>
 
     <table class="read_table" align=center>
@@ -36,7 +46,10 @@
 
     <!-- MODIFY & DELETE 추후 세션처리로 보완 예정 -->
     <div class="read_btn">
-        <button class="read_btn1" onclick="location.href='./board.php'">목록</button>&nbsp;&nbsp;
+        <form method="post" action="./board.php" style="display:inline;">
+            <input type="hidden" name="b_num" value="<?php echo $b_num ?>">
+            <button type="submit" class="read_btn1">목록</button>&nbsp;&nbsp;
+        </form>
         <?php
         if (isset($_SESSION['id']) && $_SESSION['id'] == $rows['id']) { ?>
             <button class="read_btn1" onclick="location.href='./modify.php?number=<?= $number ?>'">수정</button>&nbsp;&nbsp;

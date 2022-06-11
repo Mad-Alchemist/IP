@@ -15,7 +15,7 @@
     <?php } else if($b_num==3){?>
         <link rel="stylesheet" href="./css/board3.css" type="text/css">
     <?php } else if($b_num==4){?>
-        <link rel="stylesheet" href="./css/board.css" type="text/css">
+        <link rel="stylesheet" href="./css/board4.css" type="text/css">
         <?php }?>
 </head>
 
@@ -47,7 +47,7 @@
         <?php }
     else if($b_num==4)
     {?>
-        <p style="font-size:25px; text-align:center"><b>커뮤니티</b></p>
+        <p class="tile"><b>커뮤니티</b></p>
     <?php }?>
     <table align=center>
         <thead align="center">
@@ -93,13 +93,17 @@
     </table>
     
     <div class=text>
-        <?php if (isset($_SESSION['id'])){?>
+        <?php if ($b_num!=1 && isset($_SESSION['id'])){?>
             <form method="post" action="./write.php">
                 <input type="hidden" value=<?php echo $b_num ?> name="b_num">
                 <button class="sbtn" type="submit">글쓰기</button>
             </form>
         <?php }?>
-    </div>
+    <?php if($b_num==4){?>
+    <div class="gif">
+        <img src="./img/그림.gif">
+        </div>
+        <?php } ?>
 </body>
 
 </html>
