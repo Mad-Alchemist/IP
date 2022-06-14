@@ -1,0 +1,93 @@
+body{
+    background-color:#FFFD95
+}
+
+.read_table {
+            border: 2px solid #D9CFF6;
+            margin-top: 30px;
+            border-radius:10px;
+            background-color:white;
+        }
+
+        .read_title {
+            height: 45px;
+            font-size: 23.5px;
+            text-align: center;
+            background-color: #496C7A;
+            color: white;
+            width: 1000px;
+        }
+
+        .read_id {
+            text-align: center;
+            background-color: #B3C1C7;
+            width: 30px;
+            height: 33px;
+        }
+
+        .read_id2 {
+            background-color: white;
+            width: 60px;
+            height: 33px;
+            padding-left: 10px;
+        }
+
+        .read_hit {
+            background-color: #B3C1C7;
+            width: 30px;
+            text-align: center;
+            height: 33px;
+        }
+
+        .read_hit2 {
+            background-color: white;
+            width: 60px;
+            height: 33px;
+            padding-left: 10px;
+        }
+
+        .read_content {
+            padding: 20px;
+            border-top: 1px solid #1A475E;
+            height: 500px;
+            background-color:white;
+        }
+
+        .read_btn {
+            width: 700px;
+            height: 200px;
+            text-align: center;
+            margin: auto;
+            margin-top: 50px;
+        }
+
+        .read_btn1 {
+            height: 50px;
+            width: 100px;
+            font-size: 20px;
+            text-align: center;
+            background-color: white;
+            border: 2px solid black;
+            border-radius: 10px;
+        }
+
+        .read_comment_input {
+            width: 700px;
+            height: 500px;
+            text-align: center;
+            margin: auto;
+        }
+
+        .read_text3 {
+            font-weight: bold;
+            float: left;
+            margin-left: 20px;
+        }
+
+        .read_com_id {
+            width: 100px;
+        }
+
+        .read_comment {
+            width: 500px;
+        }

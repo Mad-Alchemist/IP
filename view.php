@@ -10,7 +10,7 @@
     <?php } else if($b_num==2){?>
         <link rel="stylesheet" href="./css/view.css" type="text/css">
     <?php } else if($b_num==3){?>
-        <link rel="stylesheet" href="./css/view.css" type="text/css">
+        <link rel="stylesheet" href="./css/view3.css" type="text/css">
     <?php } else if($b_num==4){?>
         <link rel="stylesheet" href="./css/view4.css" type="text/css">
         <?php }?>
@@ -25,7 +25,6 @@
     $rows = mysqli_fetch_assoc($result);
     $connect->query("update board set hit=hit+1 where number=$number");
     ?>
-
     <table class="read_table" align=center>
         <tr>
             <td colspan="4" class="read_title"><?php echo $rows['title'] ?></td>
