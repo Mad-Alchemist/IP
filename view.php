@@ -24,6 +24,9 @@
     $result = $connect->query($query);
     $rows = mysqli_fetch_assoc($result);
     $connect->query("update board set hit=hit+1 where number=$number");
+
+    $cquery="select number, name, content, date, id from comment where $number=b_num";
+    $cresult=$connect->query($cquery);
     ?>
     <table class="read_table" align=center>
         <tr>
@@ -41,6 +44,48 @@
             <td colspan="4" class="read_content" valign="top">
                 <?php echo $rows['content'] ?></td>
         </tr>
+        <tr>
+            <td width="50px" class="com" align="center">작성자</td>
+            <td width="600px" class="com" align="center">댓글</td>
+            <td width="150px" class="com" align="center">작성시간</td>
+            </tr>
+        <tbody>
+            <?php
+            while ($crows = mysqli_fetch_assoc($cresult)){?>
+            <tr>
+            <td width="50px" align="center"><?php echo $crows['name']?></td>
+            <td width="600px" align="center"><?php echo $crows['content']?></td>
+            <td width="150px" align="center"><?php echo $crows['date']?></td>
+            <?php if (isset($_SESSION['id']) && $crows['id']==$_SESSION['id']){?>
+            <td width="100px" align="right"><button class="codel" a onclick="cask();">삭제</button>
+            <script>
+            function cask() {
+                if (confirm("댓글을 삭제하시겠습니까?")) {
+                    window.location = "./cdel.php?number=<?= $crows['number']?>"
+                }
+            }
+            </script>
+            </tr>
+            <?php } } ?>
+            </td>
+        <?php if (isset($_SESSION['name'])){?>
+        <tr>
+            <form method="POST" action="./com.php">
+            <td width="50px" align="center"><?php echo $_SESSION['name']?></td>
+            <td width="600px" align="center">
+                    <textarea name="comment" cols=75 rows=3 required></textarea>
+                    <input type="hidden" name="b_num" value="<?php echo $number?>">
+                </td>
+            <td width="150px" align="center">
+                <button class="cbtn" type="submit"> 댓글 작성
+             </button>
+             </td>
+             </form>
+            </tr>
+            <?php } ?>
+            
+            
+            </tbody>
     </table>
 
     <!-- MODIFY & DELETE 추후 세션처리로 보완 예정 -->
@@ -63,6 +108,8 @@
             </script>
         <?php } ?>
     </div>
+
+
 </body>
 
 </html>

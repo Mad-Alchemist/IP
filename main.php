@@ -87,28 +87,52 @@
 <div class="anim">
   <img class="MImg" src="./img/123.png" data-aos="fade" data-aos-duration="2000">
   <p id="T">아래로 스크롤 하여 확인하기 </p>
-  <div class="aos" data-aos="fade-up-right" data-aos-duration="2000" data-aos-offset="800">
+  <div class="aos" data-aos="fade-up-right" data-aos-duration="2000" data-aos-offset="500">
     <p class="intr">학교 생활에 대한 <br>정보가 필요하신가요?</p>
     </div>
-  <div class="aos" data-aos="fade-up-left" data-aos-duration="2000" data-aos-offset="600">
+  <div class="aos" data-aos="fade-up-left" data-aos-duration="2000" data-aos-offset="400">
     <p class="intr">당신을 위한 정보</p>
     </div>
-  <div class="aos" data-aos="fade" data-aos-duration="2000" data-aos-offset="800">
+  <div class="aos" data-aos="fade" data-aos-duration="2000" data-aos-offset="500">
     <img class="img" src="./img/img1.png">
     </div>
-  <div class="aos" data-aos="fade-up-left" data-aos-duration="2000" data-aos-offset="800">
-    <img class="img" src="./img/ex2.png">
+    <div class="aos" data-aos="fade-up-right" data-aos-duration="2000" data-aos-offset="500">
+    <p class="intr">집떠나 고생하는 당신,<br>우리 함께 등교해요</p>
     </div>
-  <div class="aos" data-aos="fade-up-left" data-aos-duration="2000" data-aos-offset="800">
-    <img class="img" src="./img/ex2.png">
+    <div class="aos" data-aos="fade-up-left" data-aos-duration="2000" data-aos-offset="400">
+    <p class="intr">카풀/택시 게시판에서</p>
     </div>
-  <div class="aos" data-aos="fade-up-left" data-aos-duration="2000" data-aos-offset="800">
-    <img class="img" src="./img/ex2.png">
+  <div class="aos" data-aos="fade-up-left" data-aos-duration="2000" data-aos-offset="500">
+    <img class="img" src="./img/캡처.png">
     </div>
-  <div class="aos" data-aos="fade-up-left" data-aos-duration="2000" data-aos-offset="800">
-    <img class="img" src="./img/ex2.png">
+    <div class="aos" data-aos="fade-up-right" data-aos-duration="2000" data-aos-offset="500">
+      <p class="intr">전공지식말고...<br>책만 쌓인다구요?</p>
+      </div>
+    <div class="aos" data-aos="fade-up-left" data-aos-duration="2000" data-aos-offset="400">
+      <p class="intr">아냥 마켓에서<br>처리해 버리자구요</p>
+      </div>
+      <div class="aos" data-aos="fade-up-right" data-aos-duration="2000" data-aos-offset="500">
+    <img class="img" src="./img/마켓.png">
+  <div class="aos" data-aos="fade-up-left" data-aos-duration="2000" data-aos-offset="500">
+    <img class="img" src="./img/당근.png">
+    </div>
+    <div class="aos" data-aos="fade-up-right" data-aos-duration="2000" data-aos-offset="500">
+      <p class="intr">저런거 말고<br>소통이 필요하다구요?</p>
+      </div>
+    <div class="aos" data-aos="fade-up-left" data-aos-duration="2000" data-aos-offset="400">
+      <p class="intr">그래서 준비했습니다.<br>Community For You</p>
+  <div class="aos" data-aos="fade-up-left" data-aos-duration="2000" data-aos-offset="500">
+    <img class="img" src="./img/커뮤니티.png">
+    </div>
+  <div class="aos" data-aos="fade-up-left" data-aos-duration="2000" data-aos-offset="500">
+    <img class="img" src="./img/커뮤니.png">
   </div>
 </div>
+  <div class="mem_intro">
+    <div class="aos" data-aos="fade" data-aos-duration="2000">
+      <p class="mint">조장<br>유병민<br><br>조원<br>김나현<br>김정환<br>박건<br>박수민<br></p>
+      </div>
+    </div>
 
 <script> 
   AOS.init(); 
